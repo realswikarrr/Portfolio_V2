@@ -1,5 +1,3 @@
-"use client";
-
 import formatDate from "@/utils/formatDate";
 import { FC } from "react";
 import matter from "gray-matter";
