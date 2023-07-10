@@ -34,14 +34,14 @@ const PostCard: FC<PostCardProps> = ({
             <path
               d="M5.25 12.75L12.75 5.25"
               stroke="#999999"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></path>
             <path
               d="M5.25 5.25H12.75V12.75"
               stroke="#999999"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></path>
           </svg>
         </div>

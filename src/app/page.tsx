@@ -6,6 +6,8 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 import matter from "gray-matter";
 import fs from "fs";
 import * as path from "path";
+import projects from "@/data/projects";
+import ProjectCard from "@/components/ProjectCard";
 
 const getPostMetadata = () => {
   const files = fs.readdirSync(path.join("src", "content"));
@@ -18,6 +20,7 @@ const getPostMetadata = () => {
 
     return {
       data,
+      slug: filename.split(".")[0],
     };
   });
 
@@ -68,6 +71,39 @@ export default function Home({}) {
                 />
               ))}
         </section>
+
+        <article className="flex flex-col gap-8">
+          <header className="flex w-full flex-row justify-between gap-2">
+            <h3 className="text-lg text-neutral-100">
+              Selected projects ({projects.length})
+            </h3>
+          </header>
+          {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
+
+          <section className="flex flex-col gap-4">
+            {projects.length !== 0 &&
+              projects.map((project) => (
+                <ProjectCard key={project.title} {...project} />
+              ))}
+          </section>
+        </article>
+
+        <article className="flex flex-col gap-8">
+          <header className="flex w-full flex-row justify-between gap-2">
+            <h3 className="text-lg text-neutral-100">Get in touch</h3>
+          </header>
+          <p>
+            Email me at{" "}
+            <CustomLink
+              // @ts-ignore
+              href={`mailto:${presentation.mail}`}
+              label={presentation.mail}
+            />{" "}
+            or follow me via my social links.
+          </p>
+
+          <SocialLinks />
+        </article>
       </article>
     </main>
   );
