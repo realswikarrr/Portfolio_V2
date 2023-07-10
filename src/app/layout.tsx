@@ -4,9 +4,10 @@ import "../styles/posts.css";
 import type { Metadata } from "next";
 import theme from "@/data/theme";
 import BlurCircle from "@/components/BlurCircle";
+import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio / Blog",
+  title: "Swikar Adhikari",
   description: "Personal Portfolio of Swikar Adhikari.",
 };
 

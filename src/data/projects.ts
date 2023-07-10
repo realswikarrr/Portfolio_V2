@@ -7,20 +7,20 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "Dictionary App",
-    techs: ["ReactJS (NextJS)", "react-query", "zod"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    title: "Breadit Full Stack Application",
+    techs: ["ReactJS (NextJS)", "react-query", "zod", "prisma", "planetscale"],
+    link: "https://breadit-swikar.vercel.app/",
   },
   {
-    title: "Portfolio / Lina BLIDI",
+    title: "Music Player",
     techs: ["ReactJS (NextJS)", "TypeScript"],
-    link: "https://www.linablidi.fr/",
+    link: "https://neplofi.vercel.app/",
   },
   {
-    title: "Portfolio / Template",
-    techs: ["Astro"],
-    link: "/",
-    isComingSoon: true,
+    title: "ShareU Full Stack Document Sharing App",
+    techs: ["ReactJS (NextJS)", "tRPC", "TypeScript", "Tailwind"],
+    link: "https://shareu.vercel.app/",
+    // isComingSoon: true,
   },
 ];
 

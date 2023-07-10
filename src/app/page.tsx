@@ -77,6 +77,14 @@ export default function Home({}) {
             <h3 className="text-lg text-neutral-100">
               Selected projects ({projects.length})
             </h3>
+
+            <CustomLink
+              //  @ts-ignore
+              href="/works"
+              label="See all works"
+              isUnderline
+              target="_self"
+            />
           </header>
           {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
 

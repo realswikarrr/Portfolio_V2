@@ -4,8 +4,14 @@ import fs from "fs";
 import * as path from "path";
 import formatDate from "@/utils/formatDate";
 import Link from "next/link";
+import { Metadata } from "next";
 
 interface pageProps {}
+
+export const metadata: Metadata = {
+  title: "Posts",
+  description: "Blog Post From Swikar Adhikari",
+};
 
 const getPostMetadata = () => {
   const files = fs.readdirSync(path.join("src", "content"));
