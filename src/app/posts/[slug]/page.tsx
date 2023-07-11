@@ -12,8 +12,12 @@ interface pageProps {
 
 // fix this
 const getPostMetadata = (slug: any) => {
+  const files = fs.readdirSync(path.join("src", "content"));
+
+  const exactDirectory = files.filter((file) => file.indexOf(slug) === 0);
+
   const markdownWithMeta = fs.readFileSync(
-    path.join("src", "content", slug + ".md")
+    path.join("src", "content", exactDirectory[0])
   );
 
   const { data, content } = matter(markdownWithMeta);
