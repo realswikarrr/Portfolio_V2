@@ -35,7 +35,7 @@ const page: FC<pageProps> = ({}) => {
 
   return (
     <>
-      <main className="flex flex-col gap-20">
+      <main className="flex flex-col gap-10">
         <h1 className="text-2xl text-neutral-100">Posts</h1>
 
         <article className="flex flex-col gap-4">

@@ -53,6 +53,7 @@ export default function Home({}) {
             label="See all posts"
             isUnderline
             target="_self"
+            isLink={true}
           />
         </header>
         {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
@@ -84,6 +85,7 @@ export default function Home({}) {
               label="See all works"
               isUnderline
               target="_self"
+              isLink={true}
             />
           </header>
           {projects.length === 0 && <p>Oops, I must work^^^^^</p>}

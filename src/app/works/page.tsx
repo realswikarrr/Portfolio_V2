@@ -14,10 +14,11 @@ export const metadata: Metadata = {
 const page: FC<pageProps> = ({}) => {
   return (
     <>
-      <main className="flex flex-col gap-20">
+      <main className="flex flex-col gap-10">
         <h1 className="text-2xl text-neutral-100">Works</h1>
 
-        <article className="flex flex-col gap-4">
+        <div className=" border-t border-neutral-700 "></div>
+        <article className="flex flex-col gap-4 ">
           {allworks.length === 0 && <p>Oops, I must work^^^^^</p>}
 
           <section className="flex flex-col gap-4">
