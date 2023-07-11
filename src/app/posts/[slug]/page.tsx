@@ -1,10 +1,11 @@
+/* eslint-disable react/no-children-prop */
 import formatDate from "@/utils/formatDate";
 import { FC } from "react";
 import matter from "gray-matter";
 import fs from "fs";
 import * as path from "path";
 
-import Markdown from "markdown-to-jsx";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 interface pageProps {
   params: any;
@@ -35,8 +36,7 @@ const page: FC<pageProps> = ({ params }) => {
         </h1>
         <p className="italic">{post.data.description}</p>
       </header>
-
-      <Markdown>{post.content}</Markdown>
+      <ReactMarkdown children={post.content} />
     </main>
   );
 };
