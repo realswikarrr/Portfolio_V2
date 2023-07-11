@@ -10,6 +10,7 @@ interface pageProps {
   params: any;
 }
 
+// fix this
 const getPostMetadata = (slug: any) => {
   const markdownWithMeta = fs.readFileSync(
     path.join("src", "content", slug + ".md")
