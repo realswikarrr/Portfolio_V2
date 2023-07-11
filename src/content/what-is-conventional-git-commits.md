@@ -2,7 +2,7 @@
 title: "What Is Conventional Git Commits"
 publishedAt: 2023-07-11
 description: "Short blog about what is conventional git commits"
-slug: "why-use-conventional-git-commits"
+slug: "what-is-conventional-git-commits"
 isPublish: true
 ---
 
